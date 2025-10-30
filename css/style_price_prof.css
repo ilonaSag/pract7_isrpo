@@ -1,0 +1,133 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: "Inter";
+}
+@font-face {
+    font-family: "Inter";
+    src: url("../font/Inter_24pt-Regular.ttf");
+}
+
+.header_nav{
+    height: 100vh;
+    padding-left: 1%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 50px;
+    position: fixed;
+}
+.header_nav a{
+    text-decoration: none;
+    writing-mode: vertical-lr;
+    color: white;
+}
+.standart_section{
+    width: 90%;
+    padding-left: 10%;
+    height: 100vh;
+    background-color: #222222;
+    background-image: url("../img/standart_back.png");
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 20px;
+    color: #fff;
+}
+.standart_title{
+    font-size: 90px;
+    font-weight: bold;
+    font-style: italic;
+    text-transform: uppercase;
+}
+.standart_title span{
+    color: #e73abb;
+}
+.char_content, .price_content{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+.char_content h3, .price_content h3{
+    font-size: 40px;
+    text-transform: uppercase;
+}
+.char_list, .price_list{
+    display: flex;
+    gap:20px;
+}
+.char_item{
+    width: 10%;
+    pad: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+    background-color: #1f1f1f;
+    border-radius: 10px;
+    border: 2px solid #ffffff50;
+}
+.char_item p{
+    font-size: 18px;
+}
+.char_item span{
+    font-size: 12px;
+    color: #1f1f1f;
+}
+.price_item{
+    width: 10%;
+    pad: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+    background-color: #1f1f1f;
+    border-radius: 10px;
+    border: 2px solid #ffffff50;
+}
+.price_item_title{
+    font-size: 14px;
+}
+.price_item_acces{
+    font-size: 12px;
+    color: white;
+}
+.price_item_desc{
+    font-size: 10px;
+}
+.price_item_price{
+    font-size: 20px;
+}
+.pie{
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+}
+.one{
+    background-image: conic-gradient(white 10%, #000 0%);
+}
+.two{
+    background-image: conic-gradient(white 25%, #000 0%);
+}
+.three{
+    background-image: conic-gradient(white 40%, #000 0%);
+}
+.four{
+    background-image: conic-gradient(white 65%, #000 0%);
+}
+.night{
+    background-image: radial-gradient(circle at -5%, #000 60%, #fff 60% 90%, #000);
+}
+.day{
+    background-image: radial-gradient(#fff 45%,#000);
+}
+.standart_section .price_item:first-child{
+    border: 2px solid #ffdaf1;
+}
+.standart_section .price_item:nth-child(2){
+    border: 2px solid #ffa8db;
+}
+.standart_section .price_item:last-child{
+    border: 2px solid #ff009e;
+}

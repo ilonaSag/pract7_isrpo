@@ -159,3 +159,152 @@ legend{
     transition: 0.7s;
     color: white;
 }
+
+/*скролл*/
+.scroll_content{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-color:  #0E0E0E;
+    height: 100vh;
+    background-image: url("../img/back_photo.png");
+    background-repeat: no-repeat;
+    background-position: 50% center, 100% center;
+    background-size: 90%;
+}
+.scroll_img{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 5%;
+}
+.little{
+    width: 40%;
+    height: 40%; 
+    filter: saturate(0.2);
+}
+.big{
+    width: 70%;
+    height: 70%;
+}
+.circles{
+    display: flex;
+    flex-direction: row;
+    gap: 15px;
+}
+.circle{
+    background-color: white;
+    width: 15px;
+    height: 15px;
+    border-radius: 50px;
+    opacity: 0.3;
+}
+.white{
+    opacity: 1;
+}
+
+/*Форма ввода*/
+.form_content{
+    height: 100vh;
+    color: white;  
+    background-color: #191919;
+    background-image: url("../img/form_back.png");
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+legend{
+    text-align: left;
+    font-weight: bold;
+    font-size: 34px;
+}
+fieldset{
+    border-left: none;
+    border-radius: 10px;
+    margin: 0;
+    position: relative;
+}
+.input_form{
+    display: grid;
+    grid-template-columns: 2fr 1fr 1fr;
+    grid-template-areas: "a b c"
+    "d d d"
+    "f f f"
+    "k k k";
+    gap: 15px;
+    width: 80%;
+    margin-top: 80px;
+    margin-bottom: 70px;
+}
+input{
+    background-color: #030303;
+    border:none;
+    color: white;
+    padding: 15px;
+    border-radius: 10px;
+}
+input::placeholder{
+    color: white;
+}
+textarea{
+    background-color: #030303;
+    border:none;
+    padding: 20px;
+    border-radius: 10px;
+    height: 70px;
+}
+textarea::placeholder{
+    color: white;
+}
+.forms{
+    display: flex;
+    justify-content: center;
+    background-color: #0F0F0F;
+    padding: 50px 30px;
+    border-radius: 10px;
+    width: 50%;
+
+}
+#name{
+    grid-area: a;
+}
+#data{
+    grid-area: b;
+}
+#time{
+    grid-area: c;
+}
+#kol{
+    grid-area: d;
+}
+#num{
+    grid-area: f;
+}
+#us{
+    grid-area: k;
+}
+.btn_form{
+    position: absolute;
+    bottom: -23px;
+    text-decoration: none;
+    color: #E637B7;
+    background-color: white;
+    padding: 8px 50px;
+    border-radius: 10px;
+    font-size: 24px;
+}
+.man{
+    position: absolute;
+    left: 750px;
+    top: 60px;
+}
+#bul{
+    position: relative;
+}
+#hel{
+    position: absolute;
+    right: -50px;
+    bottom: -10px;
+}
