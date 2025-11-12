@@ -294,6 +294,11 @@ textarea::placeholder{
     padding: 8px 50px;
     border-radius: 10px;
     font-size: 24px;
+    transition: 0.7s;
+}
+.btn_form:hover{
+    color: white;
+    background-color: #E637B7;
 }
 .man{
     position: absolute;
@@ -307,4 +312,213 @@ textarea::placeholder{
     position: absolute;
     right: -50px;
     bottom: -10px;
+}
+
+.sales_section{
+    color: white;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #0e0e0e;
+    background-image: url('../img/shape_back_one.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.sales_section h1{
+    margin: 50px;
+    font-size: 56px;
+}
+.sales{
+    display: grid;
+    grid-template-columns: 2fr 1.5fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr;
+    gap: 30px;
+    width: 90%;
+    height: 60%;
+}
+.sale{
+    display: grid;
+    grid-template-columns: 1fr 3fr 1fr;
+    grid-template-rows: 1fr 6fr 1fr;
+    border-radius: 20px;
+    align-items: center;
+    text-align: center;
+    padding: 10px;
+}
+.sale h3{
+    grid-row-start: 2;
+    grid-column-start: 2;
+}
+.sale a{
+    grid-row-start: 3;
+    grid-column-start: 1;
+    grid-column-end: 3;
+    text-align: left;
+    color: white;
+    text-decoration: none;
+}
+#ciber{
+    background-image: url('../img/ciber_back.png');
+    background-color: #5a0144;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-blend-mode: overlay;
+    grid-column-start: 1;
+    grid-row-start: 1;
+    grid-row-end: 3;
+}
+#ciberification_cs{
+    background-image: url('../img/cs_back.png');
+    background-color: #5a0144;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-blend-mode: overlay;
+    grid-column-start: 1;
+    grid-row-start: 3;
+    grid-row-end: 5;
+}
+#ciberification_dota{
+    background-image: url('../img/dota_back.jpg');
+    background-color: #5a0144;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-blend-mode: overlay;
+    grid-column-start: 1;
+    grid-row-start: 5;
+    grid-row-end: 7;
+}
+#sales_pn{
+    background-image: url('../img/monday_back.jfif');
+    background-color: #5a0144;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-blend-mode: overlay;
+    grid-column-start: 2;
+    grid-row-start: 1;
+    grid-row-end: 4;
+}
+#group_vk{
+    background-image: url('../img/vk_back.jpg');
+    background-color: #5a0144;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-blend-mode: overlay;
+    grid-column-start: 2;
+    grid-row-start: 4;
+    grid-row-end: 7;
+}
+#snackes{
+    background-image: url('../img/drink_back.jfif');
+    background-color: #5a0144;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-blend-mode: overlay;
+    grid-column-start: 3;
+    grid-row-start: 1;
+    grid-row-end: 3;
+}
+#hb{
+    background-image: url('../img/birthday_back.png');
+    background-color: #5a0144;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-blend-mode: overlay;
+    grid-column-start: 3;
+    grid-row-start: 3;
+    grid-row-end: 5;
+    
+}
+
+
+footer{
+    display: flex;
+    gap: 20px;
+    align-items: center;
+    justify-content: space-between;
+    height: 100vh;
+    background-color: #0F0F0F;
+    background-image: url('../img/contact_back.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 0 5%;
+}
+footer .plashka{
+    display: flex;
+    width: 40%;
+    height: 35%;
+    flex-direction: column;
+    justify-content: center;
+    border-radius: 25px;
+    padding: 2%;
+    
+}
+.plashka{
+    background-color: #030303;
+}
+.plashka h2{
+    margin-bottom: 20px;
+    margin-top: 30px;
+}
+.plashka .str:nth-of-type(2n){
+    margin-bottom: 20px;
+}
+.plashka p:nth-of-type(2n){
+    margin-bottom: 20px;
+}
+.plashka p span, .str span{
+    color: #5c5c5c;
+}
+.contact{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.contact img{
+    height: 60px;
+}
+.str{
+    display: flex;
+    align-items: center;
+    gap: 5PX;
+}
+.point{
+    height: 12px;
+    width: 12px;
+    
+    border-radius: 50%;
+}
+.red{
+    background-color: #FF003D;
+}
+.or{
+    background-color: #ff8800;
+}
+.map{
+    height: 41%;
+    width: 100%;
+}
+.map iframe{
+    height: 100%;
+    border-radius: 25px;
+    width: 100%;
+}
+.col{
+    color: white;
+}
+.btn_cta{
+    text-decoration: none;
+    color: #E637B7;
+    background-color: white;
+    padding: 5px 40px;
+    border-radius: 10px;
+    font-size: 18px;
+    font-weight: bold;
+    transition: 0.7s;
+}
+.btn_cta:hover{
+    color: white;
+    background-color: #E637B7;
 }
